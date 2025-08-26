@@ -1,11 +1,11 @@
-# timezone-detector
+# @tangju/timezone-detector
 
 一个简单易用的 TypeScript 时区检测工具，用于获取和格式化当前系统时区信息。
 
 ## 安装
 
 ```bash
-npm install timezone-detector
+npm install @tangju/timezone-detector
 ```
 
 ## 功能特性
@@ -23,7 +23,7 @@ npm install timezone-detector
 ### 基础用法
 
 ```typescript
-import { getCurrentTimezone, formatTimezone, printTimezone } from 'timezone-detector';
+import { getCurrentTimezone, formatTimezone, printTimezone } from '@tangju/timezone-detector';
 
 // 获取完整时区信息
 const timezone = getCurrentTimezone();
@@ -51,7 +51,7 @@ printTimezone('detailed');
 ### 在 Node.js 中使用
 
 ```javascript
-const { getCurrentTimezone } = require('timezone-detector');
+const { getCurrentTimezone } = require('@tangju/timezone-detector');
 
 const timezone = getCurrentTimezone();
 console.log(`当前时区: ${timezone.identifier}`);
@@ -61,7 +61,7 @@ console.log(`UTC偏移: ${timezone.offsetString}`);
 ### 在浏览器中使用
 
 ```html
-<script src="node_modules/timezone-detector/dist/index.js"></script>
+<script src="node_modules/@tangju/timezone-detector/dist/index.js"></script>
 <script>
   const timezone = TimezoneDetector.getCurrentTimezone();
   console.log('时区信息:', timezone);
@@ -105,7 +105,7 @@ interface TimezoneInfo {
 ### 1. 服务器日志记录
 
 ```typescript
-import { getCurrentTimezone } from 'timezone-detector';
+import { getCurrentTimezone } from '@tangju/timezone-detector';
 
 function logWithTimezone(message: string) {
   const tz = getCurrentTimezone();
@@ -120,7 +120,7 @@ logWithTimezone('应用启动');
 
 ```typescript
 import express from 'express';
-import { getCurrentTimezone } from 'timezone-detector';
+import { getCurrentTimezone } from '@tangju/timezone-detector';
 
 const app = express();
 
@@ -136,7 +136,7 @@ app.get('/api/server-info', (req, res) => {
 ### 3. 时区转换工具
 
 ```typescript
-import { getCurrentTimezone } from 'timezone-detector';
+import { getCurrentTimezone } from '@tangju/timezone-detector';
 
 function getLocalTime() {
   const tz = getCurrentTimezone();
