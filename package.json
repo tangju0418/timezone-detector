@@ -1,7 +1,7 @@
 {
   "name": "@tangju/timezone-detector",
   "author": "tangju",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple TypeScript utility to detect and output the current timezone",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
